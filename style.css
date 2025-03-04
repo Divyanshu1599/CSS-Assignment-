@@ -1,0 +1,9 @@
+.internal{
+    background-color: rgb(99, 114, 83);/*This will be overriden by internal css*/
+}
+
+.main2{
+    background-color: chartreuse;
+    font-size: 20px;
+    border: 2px;
+}

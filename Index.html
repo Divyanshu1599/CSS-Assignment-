@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!--This is external css link (Having the least priority)-->
+        <link rel="stylesheet" href="style.css">
+    <!--this is internal css-->
+    <style>
+        .main{
+            text-align: center;
+            
+        }
+        .internal {
+            background-color: rgb(97, 97, 185);
+            color: burlywood;
+            font-size: 50px;
+            font-style: bold;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1><u>CSS Demo</u></h1>
+
+    <!--This is inline css (Having the top most priority)-->
+    <div class="head" style="color: rgb(238, 231, 231); text-align: center; background-color: chocolate; font-size: 50px;">This is Inline CSS</div>
+
+    <!--This is Internal css-->
+    <div class="main">
+        <div class="internal">This is internal CSS</div>
+        <div class="internal">This is External css</div><!--This will be overriden by internal css-->
+        <div class="main2">But overriden by internal CSS</div>
+    </div>
+
+</body>
+</html>
